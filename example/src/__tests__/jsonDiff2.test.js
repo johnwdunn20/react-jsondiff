@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import JsonDiff from '../JsonDiff'; // Path to your component
+import JsonDiff from '../JsonDiffExample'; // Path to your component
 
 describe('JsonDiff Component', () => {
   // Sample JSON data for tests
