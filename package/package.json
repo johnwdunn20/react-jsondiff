@@ -2,7 +2,6 @@
   "name": "react-jsondiff",
   "version": "1.0.0",
   "description": "Display json diffs in react. Based on jsondiffpatch",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +11,10 @@
   },
   "keywords": [
     "react",
-    "jsondiff"
+    "jsondiff",
+    "jsondiffpatch",
+    "json",
+    "diff"
   ],
   "author": "John Dunn",
   "license": "MIT",
@@ -20,6 +22,14 @@
     "url": "https://github.com/johnwdunn20/react-jsondiff/issues"
   },
   "homepage": "https://github.com/johnwdunn20/react-jsondiff#readme",
+  "private": false,
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "jsondiffpatch": "^0.6.0"
   },
