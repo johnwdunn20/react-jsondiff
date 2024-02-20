@@ -7,6 +7,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import babel from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
 import copy from 'rollup-plugin-copy';
+import postcss from 'rollup-plugin-postcss';
 
 export default {
   input: 'src/index.tsx', // Main TypeScript file of our package
@@ -36,6 +37,9 @@ export default {
       targets: [
         { src: 'src/styles.css', dest: 'dist' }, // Copies the CSS file to the dist folder
       ]
+    }),
+    postcss({ // Add the plugin to your plugins array
+      extensions: ['.css'], // Optional: you can limit the plugin to specific file extensions
     })
   ]
 };
