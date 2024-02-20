@@ -1,5 +1,7 @@
 import React from "react";
 import * as jsondiffpatch from "jsondiffpatch";
+import './jsonDiffCss.css';
+import DOMPurify from 'dompurify';
 
 type JsonDiffProps = {
   oldJson: object;
@@ -17,8 +19,12 @@ const JsonDiff:React.FC<JsonDiffProps> = ({ oldJson, currentJson, isHidden }) =>
     // Use library's html formatter that generates vanilla CSS
     const htmlFormatter: any = jsondiffpatch.formatters.html;
     const htmlDiff = htmlFormatter.format(delta, oldJson);
-    // React-specific functions to handle raw html
-    const createMarkupHtml = () => ({ __html: htmlDiff });
+    // helper function to sanitize the html and insert it into the DOM
+    const createMarkupHtml = () => ({ __html: DOMPurify.sanitize(htmlDiff) });
+    
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlDiff, 'text/html');
+    console.log('doc: ', doc);
 
     return (
       <div

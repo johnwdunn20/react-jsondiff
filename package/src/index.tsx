@@ -1,6 +1,7 @@
 import React from "react";
 import jsondiffpatch from "jsondiffpatch";
 
+
 type JsonDiffProps = {
   oldJson: object;
   currentJson: object;
