@@ -33,5 +33,4 @@ With `isHidden` = true:
 
 ![example where isHidden is true](images/example-hiddenTrue.png)
 
-
 This component uses classnames and CSS for styling. If you run into any issues, take a look at the source code at [https://github.com/johnwdunn20/react-jsondiff](https://github.com/johnwdunn20/react-jsondiff)
