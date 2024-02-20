@@ -6,6 +6,7 @@ import typescript from '@rollup/plugin-typescript';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import babel from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
+import copy from 'rollup-plugin-copy';
 
 export default {
   input: 'src/index.tsx', // Main TypeScript file of our package
@@ -31,6 +32,11 @@ export default {
       presets: ['@babel/preset-react']
     }),
     terser(), // Minifies the bundles
+    copy({
+      targets: [
+        { src: 'src/styles.css', dest: 'dist' }, // Copies the CSS file to the dist folder
+      ]
+    })
   ]
 };
  

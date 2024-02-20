@@ -1,8 +1,7 @@
 import React from "react";
 import * as jsondiffpatch from "jsondiffpatch";
 import DOMPurify from 'dompurify';
-
-// TaskId: 65ca6ab1e5aad8021689d8b4
+import './styles.css';
 
 type JsonDiffProps = {
   oldJson?: object;
@@ -13,8 +12,7 @@ type JsonDiffProps = {
 const JsonDiff:React.FC<JsonDiffProps> = ({ oldJson, currentJson, isHidden }) => {
   // get comparison obj
   const delta = jsondiffpatch.diff(oldJson, currentJson);
-  // delta is undefined if the 2 objects are the exact same - not sure how I can render this
-  // console.log('delta: ', delta);
+  // delta is undefined if the 2 objects are the exact same
 
   if (delta) {
     // Use library's html formatter that generates vanilla CSS
