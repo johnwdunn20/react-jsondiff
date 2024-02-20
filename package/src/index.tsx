@@ -1,12 +1,13 @@
 import React from "react";
 import * as jsondiffpatch from "jsondiffpatch";
-import './jsonDiffCss.css';
 import DOMPurify from 'dompurify';
 
+// TaskId: 65ca6ab1e5aad8021689d8b4
+
 type JsonDiffProps = {
-  oldJson: object;
-  currentJson: object;
-  isHidden: boolean;
+  oldJson?: object;
+  currentJson?: object;
+  isHidden?: boolean;
 };
 
 const JsonDiff:React.FC<JsonDiffProps> = ({ oldJson, currentJson, isHidden }) => {
