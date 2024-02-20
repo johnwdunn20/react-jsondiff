@@ -25,7 +25,7 @@ export default {
   ],
   plugins: [
     peerDepsExternal(), // prevents duplicate bundling and in theory, multiple versions of react
-    resolve(), 
+    resolve({ browser: true}), // perfer browser version of modules
     commonjs(), // Converts CommonJS modules to ES6
     typescript({ tsconfig: './tsconfig.json' }), // TypeScript plugin
     babel({

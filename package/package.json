@@ -1,6 +1,6 @@
 {
   "name": "react-json-difference",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Display json diffs in react. Based on jsondiffpatch",
   "scripts": {
     "test": "jest",
@@ -33,9 +33,7 @@
     "dist"
   ],
   "dependencies": {
-    "@types/classnames": "^2.3.1",
     "@types/dompurify": "^3.0.5",
-    "classnames": "^2.5.1",
     "dompurify": "^3.0.9",
     "jsondiffpatch": "^0.5.0"
   },

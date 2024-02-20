@@ -2,13 +2,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import JsonDiffExample from "./JsonDiffExample";
-// import JsonDiff from 'react-json-diff';
+import JsonDiff from 'react-json-difference';
 
 
 function App() {
   return (
     <>
-    {/* <JsonDiff
+    <JsonDiff
       oldJson={{
         a: 1,
         b: 2,
@@ -24,7 +24,7 @@ function App() {
         nested: { e: 5, f: 6, g: 7, h: ["goodbye", "everyone"] },
       }}
       isHidden={true} // set to true to hide unchanged fields, false to show all fields
-    /> */}
+    />
     <br />
     <br />
     <JsonDiffExample
