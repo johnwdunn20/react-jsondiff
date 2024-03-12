@@ -3,7 +3,14 @@ Display json diffs in react. Based on [jsondiffpatch](https://github.com/benjami
 
 Now as it's own module, this component can easily be installed into any react app:
 
-Import the component: `import JsonDiff from 'jsondiff-react';`
+Import the component at the top of your file:
+
+  `import JsonDiff from 'jsondiff-react';`
+
+The `JsonDiff1` component takes in 3 properties:
+1. `oldJson`: The old JSON object
+2. `currentJson`: The new version of the JSON object
+3. `isHidden`: Hides unchanged fields when `true`, shows all fields when `false`
 
 ```typescript
     <JsonDiff
