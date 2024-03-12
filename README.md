@@ -1,4 +1,6 @@
 # react-json-difference
+[NPM](https://www.npmjs.com/package/react-json-difference)
+
 Display json diffs in react. Based on [jsondiffpatch](https://github.com/benjamine/jsondiffpatch) and originally customized for [React Query Rewind](https://reactqueryrewind.com/)
 
 Now as it's own module, this component can easily be installed into any react app:
