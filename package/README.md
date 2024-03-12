@@ -34,11 +34,10 @@ The `JsonDiff1` component takes in 3 properties:
 
 With `isHidden` = false:
 
-![example where isHidden is false](images/example-hiddenFalse.png)
-<img src="./images/example-hiddenFalse.png" width='auto' style="margin-top: 1em; margin-bottom: 1em;">
+![example where isHidden is false](https://raw.githubusercontent.com/johnwdunn20/react-jsondiff/main/package/images/example-hiddenFalse.png)
 
 With `isHidden` = true:
 
-![example where isHidden is true](images/example-hiddenTrue.png)
+![example where isHidden is true](https://raw.githubusercontent.com/johnwdunn20/react-jsondiff/main/package/images/example-hiddenTrue.png)
 
 This component uses classnames and CSS for styling. If you run into any issues, take a look at the source code at [https://github.com/johnwdunn20/react-jsondiff](https://github.com/johnwdunn20/react-jsondiff)
