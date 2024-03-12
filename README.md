@@ -3,7 +3,14 @@ Display json diffs in react. Based on [jsondiffpatch](https://github.com/benjami
 
 Now as it's own module, this component can easily be installed into any react app:
 
-Import the component: `import JsonDiff from 'jsondiff-react';`
+Import the component at the top of your file:
+
+  `import JsonDiff from 'jsondiff-react';`
+
+The `JsonDiff1` component takes in 3 properties:
+1. `oldJson`: The old JSON object
+2. `currentJson`: The new version of the JSON object
+3. `isHidden`: Hides unchanged fields when `true`, shows all fields when `false`
 
 ```typescript
     <JsonDiff
@@ -26,12 +33,11 @@ Import the component: `import JsonDiff from 'jsondiff-react';`
 ```
 
 With `isHidden` = false:
-![example where isHidden is false](packages/images/example-hiddenFalse.png)
+
+![example where isHidden is false](images/example-hiddenFalse.png)
 
 With `isHidden` = true:
-![example where isHidden is true](packages/images/example-hiddenTrue.png)
 
-
-NPM Package: [https://www.npmjs.com/package/react-json-difference](https://www.npmjs.com/package/react-json-difference)
+![example where isHidden is true](images/example-hiddenTrue.png)
 
 This component uses classnames and CSS for styling. If you run into any issues, take a look at the source code at [https://github.com/johnwdunn20/react-jsondiff](https://github.com/johnwdunn20/react-jsondiff)
