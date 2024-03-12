@@ -35,6 +35,7 @@ The `JsonDiff1` component takes in 3 properties:
 With `isHidden` = false:
 
 ![example where isHidden is false](images/example-hiddenFalse.png)
+<img src="./images/example-hiddenFalse.png" width='auto' style="margin-top: 1em; margin-bottom: 1em;">
 
 With `isHidden` = true:
 
